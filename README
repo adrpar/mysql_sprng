@@ -1,0 +1,101 @@
++-----------------------------------------------------------------------------+
+|                    mysql_sprng for MySQL 5.5 and MariaDB                    |
++-----------------------------------------------------------------------------+
+
+
+This is a implementation of the SPRNG library to MySQL. We are only supporting 
+the SIMPLE INTERFACE! I.e. no multiple streams of random numbers per connection.
+
+SPRNG is found at http://www.sprng.org
+
+To install
+----------
+
+1) Download the mysql source corresponding to your installed
+   version. Building mysql from scratch is recommended.
+
+   Note: ONLY MYSQL VERSION 5.5 AND ABOVE ARE CURRENTLY 
+   	 SUPPORTED
+
+2) edit CMakeList.txt accordingly to point to the directory 
+   where mysql is installed.
+
+3) edit CMakeList.txt accordingly to point to the directory
+   of the mysql sources
+
+4) mkdir build
+   cd build
+
+5) cmake ..
+
+6) make
+
+7) make install
+
+8) log into mysql server as root and execute the commands in 
+   install_udfs.sql
+
+   This will setup the neccessary tables, install the plugin
+   and create all the UDFs needed to administer the queue.
+
+How to use
+----------
+
+mysql_sprng supports the following 5 generators:
+
+1) CMRG: Combined Multiple Recursive Generator
+2) LCG: 48 Bit Linear Congruential Generator
+3) LCG64: 64 Bit Linear Congruential Generator with Prime Added
+4) LFG: Modified Lagged Fibonacci Generator
+5) MLFG: Multiplicative Lagged Fibonacci Generator
+
+The PMLCG Prime Modulus Linear Congruential Generator is NOT supported by mysql_sprng!
+
+For a detailed description of these generators, please see http://www.sprng.org
+
+
+The behaviour of mysql_sprng is governed by these system variables:
+
+GLOBAL:
+ - sprng_numNode: number of total nodes in your mysql cluster environment
+ - sprng_myId:    current id (starting at 0) of a given node
+
+ The global parameters are read only and can only be set at MySQL start in your
+ my.cnf file
+
+CONNECTION VARIABLES:
+ - sprng_type:   The current SPRNG generator
+ - sprng_seed:   The currently used seed
+ - sprng_packed: The packed state of the generator (NOT EDITABLE)
+
+ Connection variables can differ from connection to connection. If you cannot set connection
+ variables in a parallel environment, overloaded versions of the SPRNG call can be used to
+ update these parameters.
+
+
+Functions:
+
+sprng_dbl():
+sprng_dbl(seed):
+sprng_dbl(seed, type):
+
+Generate a double random number using the given parameters (stream number, generator type, and seed).
+This will generate distinct independant streams of random numbers on each mysql node. By using the 
+overloaded versions of the function call, you can update the seed and type. The generator is only 
+initialised, if any of these values change, i.e. the connection variables are updated and the generator 
+is reinitialised. The final state of the generator is then packed and saved under sprng_packed. This is
+needed to retain the state at the last call to the generator.
+
+
+sprng_int():
+sprng_int(seed):
+sprng_int(seed, type):
+
+Same as sprng_dbl but returning an integer number.
+
+
+sprng_make_seed():
+
+Generates a new seed that need then to be set equally on all nodes. This will generate a random seed
+according to the system time and other parameters.
+
