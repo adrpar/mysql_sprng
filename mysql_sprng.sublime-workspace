@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"decod",
+				"decodedString"
+			],
+			[
 				"gourpe",
 				"groupedAndTree"
 			],
@@ -331,6 +335,38 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "src/sprng/sprng.cpp",
+			"settings":
+			{
+				"buffer_size": 3773,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/udf_sprng.cc",
+			"settings":
+			{
+				"buffer_size": 4452,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "README",
+			"settings":
+			{
+				"buffer_size": 3214,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "install_udfs.sql",
+			"settings":
+			{
+				"buffer_size": 268,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -452,6 +488,46 @@
 	},
 	"file_history":
 	[
+		"/home/adrpar/Documents/eScience/Tools/mysql_sprng/src/sprng/lfg/lfg.cpp",
+		"/home/adrpar/Documents/eScience/Tools/mysql_sprng/src/sprng/lcg/lcg.cpp",
+		"/home/adrpar/Documents/eScience/Tools/mysql_sprng/src/sprng/cmrg/cmrg.cpp",
+		"/home/adrpar/Documents/eScience/Tools/mysql_sprng/CMakeLists.txt",
+		"/home/adrpar/Documents/eScience/Tools/mysql_sprng/src/sprng/sprng_cpp.cpp",
+		"/home/adrpar/Documents/eScience/Tools/mysql_sprng/src/sprng/memory.cpp",
+		"/home/adrpar/Documents/eScience/Tools/mysql_sprng/src/sprng/communicate.cpp",
+		"/home/adrpar/Documents/eScience/Tools/mysql_sprng/src/sprng/mlfg/mlfg.cpp",
+		"/home/adrpar/Documents/eScience/Tools/mysql_sprng/src/udf_helpers.h",
+		"/home/adrpar/Documents/eScience/Tools/mysql_sprng/src/udf_sprng_interface.cc",
+		"/home/adrpar/Documents/eScience/Tools/mysql_sprng/src/sprng/sprng.h",
+		"/home/adrpar/Documents/eScience/Tools/mysql_sprng/install_udfs.sql",
+		"/home/adrpar/Documents/eScience/Tools/mysql_sprng/src/sprng/bignum.cpp",
+		"/home/adrpar/Documents/eScience/Tools/mysql_sprng/src/udf_sprng.cc",
+		"/home/adrpar/Documents/eScience/Tools/mysql_sprng/src/globals.h",
+		"/home/adrpar/Documents/eScience/Tools/mysql_sprng/src/util.h",
+		"/home/adrpar/Documents/eScience/Tools/mysql_sprng/src/udf_sprng.h",
+		"/home/adrpar/Documents/eScience/Tools/mysql_sprng/build/CMakeFiles/mysql_sprng_UDF.dir/DependInfo.cmake",
+		"/home/adrpar/Documents/eScience/Tools/mysql_sprng/build/CMakeFiles/CMakeDetermineCompilerABI_C.bin",
+		"/home/adrpar/Documents/eScience/Tools/mysql_sprng/build/CMakeFiles/mysql_sprng_UDF.dir/depend.make",
+		"/home/adrpar/Documents/eScience/Tools/mysql_sprng/build/CMakeFiles/mysql_sprng_UDF.dir/depend.internal",
+		"/home/adrpar/Documents/eScience/Tools/mysql_sprng/deinstall_udfs.sql",
+		"/home/adrpar/Documents/eScience/Tools/mysql_sprng/README",
+		"/home/adrpar/Documents/eScience/Tools/mysql_sprng/src/sprng/store.cpp",
+		"/home/adrpar/Documents/eScience/Tools/mysql_sprng/src/sprng/cmrg/cmrg.h",
+		"/home/adrpar/Documents/eScience/Tools/mysql_sprng/src/sprng/mlfg/mlfg.h",
+		"/home/adrpar/Documents/eScience/Tools/mysql_sprng/src/sprng/pmlcg/pmlcg.h",
+		"/home/adrpar/Documents/eScience/Tools/mysql_sprng/src/sprng/primes_32.h",
+		"/home/adrpar/Documents/eScience/Tools/mysql_sprng/src/sprng/primes_32.cpp",
+		"/home/adrpar/Documents/eScience/Tools/mysql_sprng/src/sprng/primelist_32.h",
+		"/home/adrpar/Documents/eScience/Tools/mysql_sprng/src/sprng/lcg/lcg.h",
+		"/home/adrpar/Documents/eScience/Tools/mysql_sprng/src/sprng/lcg64/lcg64.h",
+		"/home/adrpar/Documents/eScience/Tools/mysql_sprng/src/sprng/communicate.h",
+		"/home/adrpar/Documents/eScience/Tools/mysql_sprng/.gitignore",
+		"/home/adrpar/Documents/eScience/Tools/mysql_sprng/src/sprng/pmlcg/Makefile.in",
+		"/home/adrpar/Documents/eScience/Tools/mysql_sprng/src/sprng/primelist_64.h#",
+		"/home/adrpar/Documents/eScience/Tools/mysql_sprng/src/sprng/store.h",
+		"/home/adrpar/Documents/eScience/Tools/mysql_sprng/src/sprng/sprng.cpp",
+		"/home/adrpar/Documents/eScience/Tools/mysql_sprng/NOTICE",
+		"/home/adrpar/Documents/eScience/Tools/mysql_sprng/LICENSE",
 		"/home/adrpar/Downloads/mysql-5.5.14-spider-3.0-vp-0.18-hs-1.2-q4m-0.95/sql/sql_partition.cc",
 		"/home/adrpar/Downloads/mysql-5.5.14-spider-3.0-vp-0.18-hs-1.2-q4m-0.95/storage/myisam/mi_check.c",
 		"/home/adrpar/Downloads/mysql-5.5.14-spider-3.0-vp-0.18-hs-1.2-q4m-0.95/sql/sql_parse.cc",
@@ -539,51 +615,11 @@
 		"/usr/src/mysql/mysql-5.5/mysql-test/r/partition_list.result",
 		"/usr/src/mysql/mysql-5.5/sql/ha_ndbcluster.cc",
 		"/usr/src/mysql/mysql-5.5/mysql-test/include/have_archive.inc",
-		"/usr/src/mysql/mysql-5.5/libservices/HOWTO",
-		"/usr/src/mysql/mysql-5.5/sql/table.cc",
-		"/usr/src/mysql/mysql-5.5/mysql-test/suite/sys_vars/inc/transaction_alloc_block_size_basic.inc",
-		"/usr/src/mysql/mysql-5.5/include/thr_alarm.h",
-		"/usr/src/mysql/mysql-5.5/regex/tests",
-		"/usr/src/mysql/mysql-5.5/sql/table.h",
-		"/home/adrpar/Documents/eScience/Tools/mysql_echo_engine/CMakeLists.txt",
-		"/home/adrpar/Documents/eScience/Tools/mysql_echo_engine/deinstall_udfs.sql",
-		"/home/adrpar/Documents/eScience/Tools/mysql_echo_engine/install_udfs.sql",
-		"/home/adrpar/Documents/eScience/Tools/daiquiri/client/lib/codemirror/package.json",
-		"/home/adrpar/Documents/eScience/multidark2/daiquiri/modules/data/views/scripts/tables/show.phtml",
-		"/home/adrpar/Documents/eScience/multidark2/daiquiri/modules/data/views/scripts/databases/show.phtml",
-		"/home/adrpar/Documents/eScience/multidark2/daiquiri/modules/data/views/scripts/columns/show.phtml",
-		"/home/adrpar/Documents/eScience/multidark2/daiquiri/client/js/daiquiri_browser.js",
-		"/home/adrpar/Documents/eScience/multidark2/daiquiri/library/Wordpress/plugin/daiquiri_shortcodes.php",
-		"/home/adrpar/Documents/eScience/multidark2/daiquiri/modules/data/controllers/DatabasesController.php",
-		"/home/adrpar/Documents/eScience/multidark2/daiquiri/modules/data/controllers/TablesController.php",
-		"/home/adrpar/Documents/eScience/multidark2/daiquiri/modules/query/models/Resource/PaquProcessor.php",
-		"/home/adrpar/Documents/eScience/multidark2/daiquiri/client/css/daiquiri_table.css",
-		"/home/adrpar/Documents/eScience/multidark2/daiquiri/modules/data/models/Viewer.php",
-		"/home/adrpar/Documents/eScience/multidark2/daiquiri/client/js/daiquiri_query.js",
-		"/home/adrpar/Documents/eScience/multidark2/daiquiri/client/js/daiquiri_table.js",
-		"/home/adrpar/Documents/eScience/multidark2/daiquiri/modules/files/models/Files.php",
-		"/home/adrpar/Documents/eScience/multidark2/daiquiri/client/css/daiquiri_common.css",
-		"/home/adrpar/Documents/eScience/multidark2/daiquiri/modules/data/models/Columns.php",
-		"/home/adrpar/Documents/eScience/multidark2/daiquiri/library/paqu/src/parseSqlAll.php",
-		"/home/adrpar/Documents/eScience/multidark2/daiquiri/modules/data/controllers/ColumnsController.php",
-		"/home/adrpar/Documents/eScience/multidark2/daiquiri/modules/data/models/Resource/Columns.php",
-		"/home/adrpar/Documents/eScience/multidark2/daiquiri/modules/data/controllers/IndexController.php",
-		"/home/adrpar/Documents/eScience/multidark2/daiquiri/library/Wordpress/plugin/daiquiri.php",
-		"/home/adrpar/Documents/eScience/multidark2/daiquiri/modules/data/models/Databases.php",
-		"/home/adrpar/Documents/eScience/multidark2/daiquiri/modules/data/models/Tables.php",
-		"/home/adrpar/Documents/eScience/multidark2/daiquiri/library/Daiquiri/Auth.php",
-		"/home/adrpar/Documents/eScience/multidark2/daiquiri/modules/query/views/scripts/index/index.phtml",
-		"/home/adrpar/Documents/eScience/multidark2/daiquiri/modules/query/models/Resource/SimpleQueue.php",
-		"/home/adrpar/Documents/eScience/multidark2/daiquiri/modules/query/models/Examples.php",
-		"/home/adrpar/Documents/eScience/multidark2/daiquiri/modules/query/controllers/IndexController.php",
-		"/home/adrpar/Documents/eScience/multidark2/daiquiri/library/Daiquiri/Acl.php",
-		"/home/adrpar/Documents/eScience/multidark2/daiquiri/modules/query/models/Init.php",
-		"/home/adrpar/Documents/eScience/multidark2/daiquiri/modules/query/models/Resource/Processing.php",
-		"/home/adrpar/Documents/eScience/multidark2/daiquiri/modules/query/views/scripts/_partials/sql-query.phtml"
+		"/usr/src/mysql/mysql-5.5/libservices/HOWTO"
 	],
 	"find":
 	{
-		"height": 24.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -683,6 +719,43 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"free(or",
+			"new int",
+			"free",
+			"free(array_sizes",
+			" new int",
+			"min(",
+			"__MYSQL_SPRNG_UTIL_H__",
+			"min(",
+			"SelectType",
+			"TODO",
+			"_mymalloc",
+			"TODO",
+			"sprng_dbl",
+			"depack",
+			"GENTYPE",
+			"Multiplicative Lagged Fibonacci Generator",
+			"' 00Multiplicative Lagged Fibonacci Generator '",
+			"input",
+			"TYPE",
+			"int",
+			"long",
+			"extern",
+			"save",
+			"var",
+			"thd",
+			"mysql_sphere_UDF",
+			"_lcg_h",
+			"seed",
+			"multiplier",
+			"LONG64",
+			"uint",
+			"NULL",
+			"*defaultgen->",
+			"defaultgen",
+			"Sprng * defaultgen",
+			"defaultgen",
+			"init_rng",
 			"ENOENT",
 			"my_rename_with_symlink",
 			"mysql_file_rename_with_symlink",
@@ -773,44 +846,7 @@
 			"open_tables_fields_info",
 			"OPEN_TABLE",
 			"In use",
-			"open_tables",
-			"locked_tables_mode",
-			"open_log_table",
-			"mysql_ha_close",
-			"trans_rollback_stmt",
-			"mdl_contex",
-			"STMT",
-			"mysql_ha_open",
-			"SQLCOM_HA_CLOSE",
-			"spider_open",
-			"spider_close_sys_table",
-			"mysql_ha_open",
-			"SQLCOM_HA_CLOSE",
-			"mysql_ha_close",
-			"mysql_ha_close_table",
-			"mysql_ha_open",
-			"mysql_ha_close",
-			"DB_DEADLOCK",
-			"HA_ERR_LOCK_DEADLOCK",
-			"HA_ERR_LOCK_DEADLOCK\ntableName",
-			"HA_ERR_LOCK_DEADLOCK",
-			"Deadlock",
-			"init_one_table",
-			"init",
-			"close",
-			"MDL_request",
-			"mdl_request",
-			"destroy",
-			"free_table_share",
-			"table_share",
-			"mdl",
-			"reinit_before_use",
-			"init_one_table",
-			"mdl_lock",
-			"mysql_ha_close",
-			"my_hash_search",
-			"init_one_table",
-			"my_hash_search"
+			"open_tables"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -851,8 +887,124 @@
 	"groups":
 	[
 		{
+			"selected": 3,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "src/sprng/sprng.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3773,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3050,
+								3050
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2192.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/udf_sprng.cc",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4452,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 1248.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "README",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3214,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1429,
+								1429
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "install_udfs.sql",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 268,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SQL/SQL.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -910,6 +1062,10 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"bignu",
+				"src/sprng/bignum.cpp"
+			],
 			[
 				"handler.cc",
 				"sql/handler.cc"
@@ -1417,10 +1573,6 @@
 			[
 				"php-",
 				"daiquiri/library/PHP-SQL-Parser/php-sql-creator.php"
-			],
-			[
-				"abstra",
-				"daiquiri/library/Daiquiri/Form/Abstract.php"
 			]
 		],
 		"width": 0.0

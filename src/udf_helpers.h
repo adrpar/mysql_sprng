@@ -122,4 +122,10 @@
 			} \
 		}
 
+#define MYSQL_UDF_PREVENT_DYNAMIC_PARAM( PARAMNUM, ERRTEXT ) \
+		if(args->args[ PARAMNUM ] == NULL) { \
+			strcpy(message, ERRTEXT ); \
+			return 1;\
+		}
+
 #endif

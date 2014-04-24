@@ -73,6 +73,9 @@ my_bool sprng_dbl_init( UDF_INIT* initid, UDF_ARGS* args, char* message ) {
 		case 2:
 			MYSQL_UDF_CHK_PARAM_CHAR(1, "sprng_dbl(seed, type) requires a string for type");
 
+			MYSQL_UDF_PREVENT_DYNAMIC_PARAM( 0, "sprng_dbl(seed, type) only constants allowed, no columns or other dynamic variables" );
+			MYSQL_UDF_PREVENT_DYNAMIC_PARAM( 1, "sprng_dbl(seed, type) only constants allowed, no columns or other dynamic variables" );
+
 			//determine type
 			length = strlen((char*)args->args[1]);
 
@@ -104,6 +107,8 @@ my_bool sprng_dbl_init( UDF_INIT* initid, UDF_ARGS* args, char* message ) {
 			}
 		case 1:
 			MYSQL_UDF_CHK_PARAM_INT(0, "sprng_dbl(seed) requires an integer for seed");
+
+			MYSQL_UDF_PREVENT_DYNAMIC_PARAM( 0, "sprng_dbl(seed) only constants allowed, no columns or other dynamic variables" );
 
 			//did things change?
 			if((int)*(long long *) args->args[0] != mysql_sprng_seed( current_thd )) {
@@ -213,6 +218,9 @@ my_bool sprng_int_init( UDF_INIT* initid, UDF_ARGS* args, char* message ) {
 		case 2:
 			MYSQL_UDF_CHK_PARAM_CHAR(1, "sprng_int(seed, type) requires a string for type");
 
+			MYSQL_UDF_PREVENT_DYNAMIC_PARAM( 0, "sprng_int(seed, type) only constants allowed, no columns or other dynamic variables" );
+			MYSQL_UDF_PREVENT_DYNAMIC_PARAM( 1, "sprng_int(seed, type) only constants allowed, no columns or other dynamic variables" );
+
 			//determine type
 			length = strlen((char*)args->args[1]);
 
@@ -244,6 +252,8 @@ my_bool sprng_int_init( UDF_INIT* initid, UDF_ARGS* args, char* message ) {
 			}
 		case 1:
 			MYSQL_UDF_CHK_PARAM_INT(0, "sprng_int(seed) requires an integer for seed");
+
+			MYSQL_UDF_PREVENT_DYNAMIC_PARAM( 0, "sprng_int(seed) only constants allowed, no columns or other dynamic variables" );
 
 			//did things change?
 			if((int)*(long long *) args->args[0] != mysql_sprng_seed( current_thd )) {
