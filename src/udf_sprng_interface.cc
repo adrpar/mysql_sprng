@@ -163,6 +163,7 @@ my_bool sprng_dbl_init( UDF_INIT* initid, UDF_ARGS* args, char* message ) {
 
 
     //no limits on number of decimals
+    initid->const_item = 0;
     initid->decimals = 31;
     initid->maybe_null = 1;
     initid->max_length = 1024;
@@ -308,6 +309,7 @@ my_bool sprng_int_init( UDF_INIT* initid, UDF_ARGS* args, char* message ) {
 
 
     //no limits on number of decimals
+    initid->const_item = 0;
     initid->decimals = 31;
     initid->maybe_null = 1;
     initid->max_length = 1024;
