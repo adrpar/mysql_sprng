@@ -96,6 +96,7 @@ Same as sprng_dbl but returning an integer number.
 
 sprng_make_seed():
 
-Generates a new seed that need then to be set equally on all nodes. This will generate a random seed
-according to the system time and other parameters.
+Generates a new seed that then needs to be set equally on all nodes. This will generate a random seed
+according to the system time and other parameters. Pass this value on to sprng_dbl(seed) or 
+sprng_int(seed)
 
