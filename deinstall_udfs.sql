@@ -1,3 +1,0 @@
-
-UNINSTALL PLUGIN sphere;
-
